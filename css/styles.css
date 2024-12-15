@@ -1,0 +1,243 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+}
+
+.header {
+  background: linear-gradient(135deg, #FFC300, #256bb1, #E74C3C);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.logo {
+  max-width: 150px;
+}
+
+.titulo {
+  margin: 10px 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.navbar a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+.menu-toggle {
+  display: none; /* Se mostrará en dispositivos móviles */
+}
+
+/* Main Styles */
+.main {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.introduction,
+.featured-products,
+.testimonials,
+.cultural-significance,
+.comments {
+  margin-bottom: 40px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+h2 {
+  color: #ff5722;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product {
+  flex: 1 1 calc(33.333% - 20px);
+  margin: 10px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+}
+
+.product-image {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+blockquote {
+  border-left: 5px solid #ff5722;
+  padding-left: 15px;
+  margin: 10px 0;
+  font-style: italic;
+}
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background: linear-gradient(135deg, #FFC300, #256bb1, #E74C3C);
+  color: white;
+}
+
+/* Comments Form */
+.comments form {
+  display: flex;
+  flex-direction: column;
+}
+
+.comments label {
+  margin-bottom: 5px;
+}
+
+.comments input,
+.comments textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.comments button {
+  background: #ff5722;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.comments button:hover {
+  background: #e64a19;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar {
+      flex-direction: column;
+  }
+
+  .product-list {
+      flex-direction: column;
+  }
+
+  .product {
+      flex: 1 1 100%;
+  }
+
+  .menu-toggle {
+      display: block;
+      background: none;
+      border: none;
+      color: white;
+      font-size: 24px;
+      cursor: pointer;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+
+/* styles.css */
+.loading {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.loading img {
+  width: 50px;
+  height: 50px;
+  animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* styles.css */
+.metodos-pago {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.loading {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.loading img {
+  width: 50px;
+  height: 50px;
+  animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  background-color: #ddd;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  background-color: #333;
+}
+
+.facebook {
+  background-color: #3b5998;
+}
+
+.twitter {
+  background-color: #1DA1F2;
+}
+
+.instagram {
+  background-color: #C13584;
+}
+
+.linkedin {
+  background-color: #0077B5;
+}

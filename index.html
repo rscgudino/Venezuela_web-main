@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubre la deliciosa gastronomía venezolana con Venezuela Food.">
+    <meta name="keywords" content="Venezuela, comida, gastronomía, productos venezolanos">
+    <title>Venezuela Food</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="/Venezuela_web/css/styles.css"> 
+</head>
+<body>
+    <header class="header">
+        <img src="/Venezuela_web/img/venesinfondo.png" alt="Logo de Venezuela Food" class="logo"> 
+        <h1 class="titulo">Venezuela Food</h1>
+        <button class="menu-toggle" aria-label="Abrir menú">
+            &#9776; <!-- Icono de menú hamburguesa -->
+        </button>
+        <nav class="navbar">
+            <a href="#bienvenido">Inicio</a>
+            <a href="#productos">Productos</a>
+            <a href="#carrito">Carrito</a>
+            <a href="#video">Video</a>
+            <a href="#testimonios">Testimonios</a>
+            <a href="#cultura">Cultura Gastronómica</a>
+            <a href="#comentarios">Comentarios</a>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section id="bienvenido" class="introduction">
+            <h2>Bienvenido a Venezuela Food</h2>
+            <p>Descubre la deliciosa gastronomía venezolana, llena de sabores y tradiciones. Desde las emblemáticas arepas hasta el sabroso pabellón criollo, cada bocado cuenta una historia. Sumérgete en un mundo de ingredientes frescos y recetas que han pasado de generación en generación. ¡Prepárate para disfrutar de una experiencia culinaria única que celebra la diversidad y riqueza de nuestra cultura!</p>
+        </section>
+
+        <section id="productos" class="featured-products">
+            <h2>Productos Destacados</h2>
+            <div class="product-list">
+                <article class="product" data-name="Arepas" data-price="2.50">
+                    <img src="/Venezuela_web/img/arepas-.webp" alt="Arepas" class="product-image">
+                    <h3>Arepas</h3>
+                    <p>Las arepas son un alimento versátil y delicioso, perfectas para cualquier comida del día.</p>
+                    <button class="add-to-cart">Agregar al carrito - $2.50</button>
+                </article>
+                <article class="product" data-name="Pabellón Criollo" data-price="5.00">
+                    <img src="/Venezuela_web/img/pabellon.webp" alt="Pabellón Criollo" class="product-image">
+                    <h3>Pabellón Criollo</h3>
+                    <p>Un plato tradicional que combina carne, frijoles, arroz y plátano frito.</p>
+                    <button class="add-to-cart">Agregar al carrito - $5.00</button>
+                </article>
+                <article class="product" data-name="Tequeños" data-price="3.00">
+                    <img src="/Venezuela_web/img/1.jpg" alt="Tequeños" class="product-image">
+                    <h3>Tequeños</h3>
+                    <p>Deliciosos palitos de queso envueltos en masa y fritos, ideales como aperitivo.</p>
+                    <button class="add-to-cart">Agregar al carrito - $3.00</button>
+                </article>
+                <article class="product" data-name="Arepas" data-price="2.50">
+                    <img src="/Venezuela_web/img/dos arepas.jpg" alt="Arepas" class="product-image">
+                    <h3>Arepas</h3>
+                    <p>Las arepas son un alimento versátil y delicioso, perfectas para cualquier comida del día.</p>
+                    <button class="add-to-cart">Agregar al carrito - $2.50</button>
+                </article>
+                <article class="product" data-name="Quesillo" data-price="5.00">
+                    <img src="/Venezuela_web/img/quesillo.webp" alt="Pabellón Criollo" class="product-image">
+                    <h3>Quesillo venezolano</h3>
+                    <p>El quesillo venezolano es un postre tradicional que se asemeja a un flan. Está hecho principalmente con leche condensada, huevos, azúcar y vainilla, lo que le otorga una textura suave y cremosa.</p>
+                    <button class="add-to-cart">Agregar al carrito - $5.00</button>
+                </article>
+                <article class="product" data-name="Combo 1" data-price="20.00">
+                    <img src="/Venezuela_web/img/venesinfondo.png" alt="Tequeños" class="product-image">
+                    <h3>Combo 1 Venezuela</h3>
+                    <p>6 Mini Arepas
+                       6 Mini Empanadas
+                       6 Mini Pastelitos
+                       6 Tequeños
+                         1 Salsa de Ajo
+
+                    </p>
+                    <button class="add-to-cart">Agregar al carrito - $20.00</button>
+                </article>
+            </div>
+        </section>
+
+        <!-- Carrito de Compras -->
+<section id="carrito" class="shopping-cart">
+    <h2>Carrito de Compras</h2>
+    <table class="cart-table">
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Precio</th>
+                <th>Cantidad</th>
+                <th>Total</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="cart-items">
+            <!-- Aquí se mostrarán los productos del carrito -->
+        </tbody>
+    </table>
+    <p id="cart-total">Total: $0.00</p>
+    <button id="purchase-button" style="display:none;">Agregar-Metodo-Pago</button>
+
+        <section id="video" class="video">
+            <h2>Descubre Nuestra Gastronomía</h2>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/xe3ySGGL78M?si=ZeDR6dgINWmaECSu" title="Video de Venezuela Food" frameborder="0" allowfullscreen></iframe>
+        </section>
+
+        <section id="testimonios" class="testimonials">
+            <h2>Testimonios</h2>
+            <blockquote>
+                <p>"¡La mejor comida venezolana que he probado! Las arepas son simplemente irresistibles."</p>
+                <footer>- María G.</footer>
+            </blockquote>
+            <blockquote>
+                <p>"Un viaje a Venezuela sin salir de casa. ¡Todo está delicioso!"</p>
+                <footer>- Juan P.</footer>
+            </blockquote>
+        </section>
+
+        <section id="cultura" class="cultural-significance">
+            <h2>Cultura Gastronómica</h2>
+            <p>La cultura gastronómica de Venezuela es rica y diversa, reflejando la mezcla de influencias indígenas, africanas y europeas. Cada región del país ofrece platos únicos, desde las arepas, que son el símbolo nacional, hasta el pabellón criollo, un plato emblemático que combina arroz, carne, frijoles y plátano.
+
+                Las tradiciones culinarias también incluyen la elaboración de dulces como el quesillo y la torta de chicharrón. La gastronomía venezolana se caracteriza por el uso de ingredientes frescos y locales, como yuca, plátano, maíz y carne de res y pollo.
+                
+                Además, las festividades y celebraciones son una parte fundamental de la cultura, donde la comida juega un papel central en las reuniones familiares y comunitarias. En resumen, la cocina venezolana es un reflejo de su historia y diversidad cultural, ofreciendo sabores y platos que capturan la esencia del país.</p>
+        </section>
+
+        <section id="comentarios" class="comments">
+            <h2>Comentarios</h2>
+            <form action="https://formspree.io/f/xqakeylo" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+            
+                <label for="comentario">Comentario:</label>
+                <textarea id="comentario" name="comentario" rows="4" required></textarea>
+            
+                <button type="submit">Enviar Comentario</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">© 2024 Quesillos Venezolanos. Todos los derechos reservados.
+        <div class="social-media">
+            <a href="https://www.facebook.com" target="_blank" class="social-icon facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+           
+            <a href="https://www.instagram.com" target="_blank" class="social-icon instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com" target="_blank" class="social-icon linkedin">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </div>
+        
+        
+
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
+
