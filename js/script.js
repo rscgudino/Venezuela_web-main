@@ -165,35 +165,3 @@ floatingCartIcon.addEventListener('click', () => {
 updateCart();
 
 
-document.addEventListener('DOMContentLoaded', function() {
-    const botonAgregar = document.getElementById('agregar-al-carrito');
-    const iconoCarrito = document.getElementById('icono-carrito');
-
-    // Función para mostrar el ícono del carrito con una animación
-    function mostrarIconoCarrito() {
-        iconoCarrito.style.display = 'block'; // Mostrar el ícono
-        iconoCarrito.style.opacity = 1; // Hacerlo visible
-    }
-
-    // Agregar un evento al botón para simular agregar al carrito
-    botonAgregar.addEventListener('click', function() {
-        // Aquí puedes agregar la lógica para agregar el producto al carrito
-
-        // Mostrar el ícono del carrito con animación
-        mostrarIconoCarrito();
-
-        // Luego de unos segundos (puedes ajustar el tiempo), ocultar el ícono
-        setTimeout(function() {
-            iconoCarrito.style.opacity = 0; // Desaparecer el ícono
-            setTimeout(function() {
-                iconoCarrito.style.display = 'none'; // Ocultar completamente el ícono
-            }, 300); // Esperar que la animación de desvanecimiento termine
-        }, 3000); // El ícono desaparece después de 3 segundos
-    });
-
-    // Asegurarnos de que el ícono se desplace con el usuario
-    window.addEventListener('scroll', function() {
-        // Aquí puedes agregar lógica si deseas que el ícono cambie o se mantenga fijo
-        // al hacer scroll, por ejemplo, cambiando su posición.
-    });
-});
