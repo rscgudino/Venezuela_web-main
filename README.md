@@ -25,7 +25,7 @@ Este proyecto es un sitio web dedicado a resaltar la rica y diversa gastronomía
 
 - **HTML**: Para la estructura del sitio.
 - **CSS**: Para el diseño y estilo.
-- **JavaScript**: Para interactividad (falta por aplicar).
+- **JavaScript**: Para interactividad.
 
 ## Instalación
 
