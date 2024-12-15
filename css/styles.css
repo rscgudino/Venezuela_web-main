@@ -260,3 +260,19 @@ footer {
 .floating-cart-icon:hover {
   background-color: #e67e22;
 }
+
+
+.icono-carrito {
+  position: fixed;
+  bottom: 20px; /* Asegúrate de que esté cerca de la parte inferior */
+  right: 20px; /* Alineado a la derecha */
+  display: none; /* Inicialmente oculto */
+  z-index: 1000; /* Asegúrate de que esté por encima de otros elementos */
+  transition: opacity 0.3s ease; /* Para animar la aparición */
+}
+
+.icono-carrito img {
+  width: 50px; /* Tamaño del ícono */
+  height: 50px;
+}
+
